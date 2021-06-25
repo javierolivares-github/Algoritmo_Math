@@ -24,6 +24,11 @@ body {
   height: 100vh;
   overflow: hidden; }
 
+.contenedor {
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px; }
+
 h1 {
   margin-bottom: 5px; }
 
