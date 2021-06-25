@@ -11,8 +11,8 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content:center;
+  align-items: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -27,6 +27,8 @@ small {
 }
 
 form {
+  margin-bottom: 15px;
+
   .form-group {
     margin-bottom: 5px;
 
@@ -47,5 +49,7 @@ form {
     padding: 5px 15px;
   }
 }
+
+
 
 

@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="css/main.css">
-  <title>Algoritmo Suma</title>
+  <title>Algoritmo Math</title>
 </head>
 <body>
-  <div id="contenedor" class="contenedor">
+  <div class="contenedor">
     <h1>Algorimo Math</h1>
     <small>Halla la suma, la multiplicación, la división y el promedio de dos números.</small>
     <form id="form">
@@ -19,9 +19,18 @@
       <div class="form-group">
         <input type="text" id="input2" placeholder="Ingrese un número">
       </div>
-      <button type="submit">Mostrar en consola</button>
+      <button type="submit">Mostrar resultado</button>
     </form>
+
+
+    <div id="salida" class="salida">
+      <p id="suma">La suma de tus números es:  </p>
+      <p id="producto">La multiplicación de tus números es:  </p>
+      <p id="división">La división de tus números es:  </p>
+      <p id="promedio">El promedio de tus números es:  </p>
+    </div>
   </div>
+
 
   <script src="script.js"></script>
 </body>
