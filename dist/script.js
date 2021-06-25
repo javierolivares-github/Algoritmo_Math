@@ -28,8 +28,8 @@ form.addEventListener('submit', (e) => {
         // Salida pantalla
         suma.innerText = `La suma de tus números es: ${su}`
         producto.innerText = `La multiplicación de tus números es: ${mu}`
-        división.innerText = `La división de tus números es: ${di}`
-        promedio.innerText = `El promedio de tus números es: ${pro}`
+        división.innerText = `La división de tus números es: ${di.toFixed(2)}`
+        promedio.innerText = `El promedio de tus números es: ${pro.toFixed(0)}`
 
     } else {
         // Salida
