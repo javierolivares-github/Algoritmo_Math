@@ -1,22 +1,29 @@
-const n1 = 9
-const n2 = 2
-const su = n1 + n2
+// Inicio
+// Entrada
+const form = document.getElementById('form');
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
 
-const contenedor = document.getElementById('contenedor')
 
-const algoritmo = document.createElement('div')
-algoritmo.classList.add('algoritmo')
-algoritmo.innerHTML = `
-    <h1>Algoritmo Sumar</h1>
-    <small>Hallar la suma de dos numeros.</small>
-    <p>Entrada (1): ${n1}</p>
-    <p>Entrada (2): ${n2}</p>
-    <p>Salida: ${su}</p>
-`
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-contenedor.appendChild(algoritmo)
+    if (input1.value !== "" && input2.value !== "") {
+        // Proceso
+        const su = parseInt(input1.value) + parseInt(input2.value);
+        const mu = parseInt(input1.value) * parseInt(input2.value);
+        const di = parseInt(input1.value) / parseInt(input2.value);
+        const pro = su/2;
 
-console.log(op_math)
-console.log(Math.round(op_math))
+        // Salida
+        console.log('La suma de tus números es: ' + su);
+        console.log('La multiplicación de tus números es: ' + mu);
+        console.log('La división de tus números es: ' + di);
+        console.log('El promedio de tus números es: ' + pro);
+    } else {
+        // Salida
+        console.log('Inserte los valores de n1 y n2.')
+    }
+})
 
 
