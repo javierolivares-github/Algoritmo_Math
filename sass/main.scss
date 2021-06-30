@@ -83,8 +83,11 @@ form {
   display:flex;
   justify-content: center;
   align-items: center;
-  
+  background-color: #fff;
+  padding: 5px 0;
+
   p {
+    color: #d35400;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.75rem;
     text-align: center;
