@@ -7,23 +7,34 @@ let suma = document.getElementById('suma');
 let producto = document.getElementById('producto');
 let división = document.getElementById('división');
 let promedio = document.getElementById('promedio');
-let error = document.getElementById('error');
 
 
+
+// Función Mostrar Error
+function mostrarError (mensaje) {
+    const error = document.getElementById('error');
+    error.className = 'error mensajeError';
+    const msjError = document.getElementById('msjError');
+    msjError.innerText = mensaje; 
+}
+
+// Función Limpiar Error
+function limpiarError () {
+    const error = document.getElementById('error');
+    error.className = 'error';
+}
+
+// Escucha de evento
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    
     if ((input1.value === "") || (input2.value === "")) {
-        console.log('error: caracter vacio');
-        error.className = 'error mensajeError';
-        const msjError = document.getElementById('msjError');
-        msjError.innerText = 'Error: caracter vacio';
+        mostrarError('Error: caracter vacio');
+        setTimeout(limpiarError, 3000);
     } 
     else if (isNaN(input1.value) || isNaN(input2.value)) {
-        console.log('error: no es un número');
-        error.className = 'error mensajeError';
-        const msjError = document.getElementById('msjError');
-        msjError.innerText = 'Error: caracter no permitido';
+        mostrarError('Error: no es un número');
+        setTimeout(limpiarError, 3000);
     }
     else {
         // Proceso
@@ -33,20 +44,20 @@ form.addEventListener('submit', (e) => {
         let pro = su/2;
 
         if (!isFinite(di)) {
-            di = 'Operación no permitida.';
+            di = 'Operación no permitida';
         }
 
         // Salida consola
-        console.log('La suma de tus números es: ' + su);
-        console.log('La multiplicación de tus números es: ' + mu);
-        console.log('La división de tus números es: ' + di);
-        console.log('El promedio de tus números es: ' + pro);
+        console.log('La suma de tus números es: ' + Math.round(su * 100) / 100);
+        console.log('La multiplicación de tus números es: ' + Math.round(mu * 100) / 100);
+        console.log('La división de tus números es: ' + Math.round(di * 100) / 100);
+        console.log('El promedio de tus números es: ' + Math.round(pro * 100) / 100);
 
         // Salida pantalla
-        suma.innerText = 'La suma de tus números es: ' + su;
-        producto.innerText = 'La multiplicación de tus números es: ' + mu;
-        división.innerText = 'La división de tus números es: ' + di;
-        promedio.innerText = 'El promedio de tus números es: ' + pro;
+        suma.innerText = 'La suma de tus números es: ' + Math.round(su * 100) / 100;
+        producto.innerText = 'La multiplicación de tus números es: ' + Math.round(mu * 100) / 100;
+        división.innerText = 'La división de tus números es: ' + Math.round(di * 100) / 100;
+        promedio.innerText = 'El promedio de tus números es: ' + Math.round(pro * 100) / 100;
     };
 })
 
