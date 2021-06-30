@@ -68,4 +68,24 @@ form {
     border-radius: 5px;
     border: none;
     outline: none; }
+
+.error {
+  visibility: hidden;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .error p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    text-align: center; }
+
+.error.mensajeError {
+  visibility: visible; }
 /*# sourceMappingURL=main.css.map */

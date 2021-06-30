@@ -7,6 +7,7 @@ let suma = document.getElementById('suma');
 let producto = document.getElementById('producto');
 let división = document.getElementById('división');
 let promedio = document.getElementById('promedio');
+let error = document.getElementById('error');
 
 
 form.addEventListener('submit', (e) => {
@@ -14,10 +15,16 @@ form.addEventListener('submit', (e) => {
 
     if ((input1.value === "") || (input2.value === "")) {
         console.log('error: caracter vacio');
+        error.className = 'error mensajeError';
+        const msjError = document.getElementById('msjError');
+        msjError.innerText = 'Error: caracter vacio';
     } 
     else if (isNaN(input1.value) || isNaN(input2.value)) {
         console.log('error: no es un número');
-    } 
+        error.className = 'error mensajeError';
+        const msjError = document.getElementById('msjError');
+        msjError.innerText = 'Error: caracter no permitido';
+    }
     else {
         // Proceso
         let su = Number(input1.value) + Number(input2.value);

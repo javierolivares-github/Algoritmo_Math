@@ -77,6 +77,25 @@ form {
   }
 }
 
+.error {
+  visibility: hidden;
+  margin-top: 2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+
+.error.mensajeError {
+  visibility: visible;
+
+}
+
 
 
 
