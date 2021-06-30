@@ -49,11 +49,12 @@ form {
 
     input {
       display: inline-block;
-      padding: 10px 15px;
+      padding: 12px 15px;
       border: 1px solid #333;
       width: 100%;
       text-align: center;
       border-radius: 5px;
+      font-size: 1rem;
     }
 
     input:focus {

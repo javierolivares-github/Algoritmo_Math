@@ -48,11 +48,12 @@ form {
     margin-bottom: 5px; }
     form .form-group input {
       display: inline-block;
-      padding: 10px 15px;
+      padding: 12px 15px;
       border: 1px solid #333;
       width: 100%;
       text-align: center;
-      border-radius: 5px; }
+      border-radius: 5px;
+      font-size: 1rem; }
     form .form-group input:focus {
       outline: none;
       border-color: #8e44ad; }
