@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
         let pro = su/2;
 
         if (!isFinite(di)) {
-            di = 'infinito';
+            di = 'operación no permitida';
         }
 
         // Salida consola
